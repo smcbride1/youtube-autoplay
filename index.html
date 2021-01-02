@@ -11,10 +11,9 @@
 
 <script>
     var player;
-    var videoID;
     function onYouTubeIframeAPIReady() {
         player = new YT.Player('div_YouTube', {
-            videoId: videoID,     // THE VIDEO ID.
+            videoId: '',     // THE VIDEO ID.
             width: 560,
             height: 316,
             playerVars: {
