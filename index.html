@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>YouTube IFrame API Example</title>
+        
+    <!--LOAD YouTube "iframe_api" ASYNCHRONOUSLY.-->
+    <script async src="https://www.youtube.com/iframe_api"></script>
+</head>
+<body>
+    <div id="div_YouTube"></div>
+</body>
+
+<script>
+    function onYouTubeIframeAPIReady() {
+        var player;
+
+        player = new YT.Player('div_YouTube', {
+            videoId: 'RQcLIm-s75U',     // THE VIDEO ID.
+            width: 560,
+            height: 316,
+            playerVars: {
+                'autoplay': 1,
+                'controls': 1,
+                'showinfo': 0,
+                'modestbranding': 0,
+                'loop': 1,
+                'fs': 0,
+                'cc_load_policty': 0,
+                'iv_load_policy': 3
+            },
+            events: {
+                'onReady': function (e) {
+                    e.target.setVolume(50);      // YOU CAN SET VALUE TO 100 FOR MAX VOLUME.
+                }
+            }
+        });
+    }
+</script>
+</html>
