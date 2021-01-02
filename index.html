@@ -29,7 +29,7 @@
             events: {
                 'onReady': function (e) {
                     e.target.setVolume(50);      // YOU CAN SET VALUE TO 100 FOR MAX VOLUME.
-                    document.title = `${Date.now()}://:${e.target.playerInfo.videoData.title}://:${e.target.playerInfo.videoData.author}`;
+                    document.title = `${Date.now()}://:${player.playerInfo.videoData.title}://:${player.playerInfo.videoData.author}`;
                 }
             }
         });
