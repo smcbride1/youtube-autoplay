@@ -30,7 +30,7 @@
                 'onReady': function (e) {
                     e.target.setVolume(50);      // YOU CAN SET VALUE TO 100 FOR MAX VOLUME.
                 },
-                'onChange': function (e) {
+                'onStateChange': function (e) {
                     document.title = `${Date.now()}://:${player.playerInfo.videoData.title}://:${player.playerInfo.videoData.author}`;
                 }
             }
